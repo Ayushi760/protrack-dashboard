@@ -1,0 +1,59 @@
+{
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Donate Rs. 500 to the charity",
+        "isCompleted": true,
+        "tags": ["Donations", "Social"],
+        "subTasks": [
+          {
+            "id": "1-1",
+            "title": "Donate Rs. 500 to the charity",
+            "isCompleted": true
+          },
+          {
+            "id": "1-2",
+            "title": "Donate Rs. 500 to the charity",
+            "isCompleted": true
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Do 500 pushups",
+        "isCompleted": false,
+        "tags": ["Sport", "Selfcare"],
+        "subTasks": [
+          {
+            "id": "2-1",
+            "title": "Start with 100",
+            "isCompleted": true
+          },
+          {
+            "id": "2-2",
+            "title": "Complete 250",
+            "isCompleted": false
+          },
+          {
+            "id": "2-3",
+            "title": "Reach 400",
+            "isCompleted": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Buy new headset",
+        "isCompleted": true,
+        "tags": ["Shopping", "Set-up"],
+        "subTasks": []
+      },
+      {
+        "id": 4,
+        "title": "Clean the room",
+        "isCompleted": false,
+        "tags": ["Selfcare"],
+        "subTasks": []
+      }
+    ]
+  }
