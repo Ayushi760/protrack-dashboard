@@ -9,7 +9,11 @@ export default {
       },
       colors:{
         button_primary:'#49CCF9',
-        secondary:'#56555C'
+        secondary:'#56555C',
+        customGrey:'#E6E4F0',
+        customBlue:'#49CCF9',
+        customPurple:'#7B68EE',
+        customTextGray:'#888793',
       },
       boxShadow: {
         custom: '0px 21.82px 21.82px 1px rgba(0, 0, 0, 0.05)',

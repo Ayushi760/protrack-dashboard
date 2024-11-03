@@ -8,7 +8,7 @@ import profile from "../assets/profile.png"
 import setting from "../assets/Setting.svg"
 const Sidebar = () => {
   return (
-    <div className='min-w-[271px] h-full justify-between bg-white flex flex-col items-center border-r border-[#E6E4F0] gap-[100px]'>
+    <div className='min-w-[271px] h-full justify-between bg-white flex flex-col items-center border-r border-customGrey gap-[100px]'>
       <ul className='flex flex-col gap-[18px] mt-[44px]'>
         <li className='flex flex-row gap-2 bg-button_primary w-[217px] h-[50px] rounded-[10px] items-center'>
           <img src={HomeIcon} alt='home' className='pl-5' />
@@ -26,7 +26,7 @@ const Sidebar = () => {
           <img src={notes} alt='notes' className='pl-5' />
           <p className='font-medium text-secondary'>Notes</p>
         </li>
-        <hr className='h-[1px] bg-[#E6E4F0]' />
+        <hr className='h-[1px] bg-customGrey' />
       </ul>
       <div className='bg-sidebar-gradient w-[228px] h-[178px] rounded-[24px] flex flex-col justify-center items-center relative'>
         <div className='absolute bg-white w-[94px] h-[94px] rounded-full -top-10'></div>
@@ -36,7 +36,7 @@ const Sidebar = () => {
         <p className='text-sm font-medium'>to get access to all features!</p>
         <p className='text-sm font-medium'>Connect with protrack world!</p>
       </div>
-      <div className='bottom-0 mb-[24px] border-[1px] border-[#E6E4F0] w-[223px] p-2 rounded-[10px] relative flex flex-row items-center justify-between'>
+      <div className='bottom-0 mb-[24px] border-[1px] border-customGrey w-[223px] p-2 rounded-[10px] relative flex flex-row items-center justify-between'>
         <div className='flex items-center gap-2'>
           <img src={profile} alt='profile' className='w-12 h-12 bg-[#B1DBF6] rounded-[5px]' />
           <div className='bg-[#00B884] w-[18px] h-[18px] rounded-[2px] border-[3px] border-white absolute bottom-1 left-11'></div>

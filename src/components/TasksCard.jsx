@@ -79,13 +79,13 @@ const TasksCard = () => {
           <h2 className="text-xl font-semibold leading-none text-secondary">Tasks for the day</h2>
           <div className="flex items-center justify-center gap-3">
             <div className="bg-[#B1DBF6] w-[25px] h-[26px] rounded-[5px] flex items-center justify-center"><img src={plusIcon} alt="plusIcon" className="h-4"/></div>
-            <div className='border-[1.5px] border-[#7B68EE] w-[25px] h-[26px] rounded-[10px] flex items-center justify-center'><img src={arrow} alt='arrow' className='h-4' /></div>
+            <div className='border-[1.5px] border-customPurple w-[25px] h-[26px] rounded-[10px] flex items-center justify-center'><img src={arrow} alt='arrow' className='h-4' /></div>
           </div>
         </div>
         {tasks.map((item, index) => (
           <div
             key={index}
-            className="bg-white w-full rounded-[10px] border border-solid border-[#E6E4F0] p-3 flex relative"
+            className="bg-white w-full rounded-[10px] border border-solid border-customGrey p-3 flex relative"
           >
             <div className="flex flex-col w-full">
               <div className="flex items-center justify-between">
@@ -99,10 +99,10 @@ const TasksCard = () => {
                     type="checkbox"
                     checked={item.isCompleted}
                     onChange={() => handleTaskToggle(item.id)}
-                    className="appearance-none h-[14px] w-[14px] rounded-sm border border-gray-300 flex items-center justify-center after:content-['\2713'] after:text-white after:font-semibold after:text-xs checked:border-none checked:bg-[#49CCF9]"
+                    className="appearance-none h-[14px] w-[14px] rounded-sm border border-gray-300 flex items-center justify-center after:content-['\2713'] after:text-white after:font-semibold after:text-xs checked:border-none checked:bg-customBlue"
                   />
                   <p
-                    className={`font-medium text-xs leading-none text-[#49CCF9] ${item.isCompleted ? "line-through" : "no-underline"
+                    className={`font-medium text-xs leading-none text-customBlue ${item.isCompleted ? "line-through" : "no-underline"
                       }`}
                   >
                     {item.title}
@@ -129,10 +129,10 @@ const TasksCard = () => {
                         type="checkbox"
                         checked={sub.isCompleted}
                         onChange={() => handleSubTaskToggle(item.id, sub.id)}
-                        className="appearance-none h-[14px] w-[14px] rounded-sm border border-gray-300 flex items-center justify-center after:content-['\2713'] after:hidden after:text-white after:font-semibold after:text-xs checked:border-none checked:bg-[#49CCF9] checked:after:block"
+                        className="appearance-none h-[14px] w-[14px] rounded-sm border border-gray-300 flex items-center justify-center after:content-['\2713'] after:hidden after:text-white after:font-semibold after:text-xs checked:border-none checked:bg-customBlue checked:after:block"
                       />
                       <p
-                        className={`font-medium text-xs leading-none text-[#49CCF9] ${sub.isCompleted ? "line-through" : "no-underline"
+                        className={`font-medium text-xs leading-none text-customBlue ${sub.isCompleted ? "line-through" : "no-underline"
                           }`}
                       >
                         {sub.title}

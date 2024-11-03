@@ -101,30 +101,30 @@ const Info = () => {
         <div className='flex justify-between gap-10'>
           <div>
             <div className='flex items-center'>
-              <p className='text-[34px] font-bold text-[#888793] leading-none'>20</p>
+              <p className='text-[34px] font-bold text-customTextGray leading-none'>20</p>
               <img src={uparrow} alt='uparrow' />
               <p className='text-[#05CD99] text-[12px] font-bold'>+2.45%</p>
             </div>
-            <p className='text-sm text-[#888793] font-medium'>Tasks Completed</p>
+            <p className='text-sm font-medium text-customTextGray'>Tasks Completed</p>
             <div className='flex items-center justify-center gap-1 my-3'>
               <div className='w-4 h-4 rounded-full bg-[#05CD99] items-center justify-center flex'>
                 <img src={done} alt='done' />
               </div>
               <p className='text-[16px] font-bold text-[#05CD99]'>On Track</p>
             </div>
-            <div className='border-[1px] border-[#7B68EE] rounded-[10px] w-[131px] p-3 flex justify-between'>
+            <div className='border-[1px] border-customPurple rounded-[10px] w-[131px] p-3 flex justify-between'>
               <img src={book} alt='book' />
-              <p className='text-[12px] font-semibold text-[#7B68EE]'>OPEN TASKS</p>
+              <p className='text-[12px] font-semibold text-customPurple'>OPEN TASKS</p>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center w-full gap-2">
-            <div className='flex items-center justify-center w-[90%] border-[1px] border-[#E6E4F0] rounded-[10px] p-2'>
+            <div className='flex items-center justify-center w-[90%] border-[1px] border-customGrey rounded-[10px] p-2'>
               <CanvasJSChart options={options} />
             </div>
             {/* Weekdays Display */}
             <div className='flex justify-between w-[80%] mb-2'>
               {weekdays.map((day, index) => (
-                <span key={index} className='text-[#888793] text-[12px] font-medium'>{day}</span>
+                <span key={index} className='text-customTextGray text-[12px] font-medium'>{day}</span>
               ))}
             </div>
           </div>
