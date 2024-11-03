@@ -72,3 +72,7 @@ button:focus-visible {
 .canvasjs-chart-tooltip{
   box-shadow: none !important;
 }
+
+.canvasjs-chart-credit {
+  display: none !important;
+}

@@ -4,6 +4,8 @@ import uparrow from '../assets/uparrow.svg';
 import done from '../assets/done.svg';
 import book from '../assets/book.svg';
 import CanvasJSReact from "@canvasjs/react-charts";
+import toolTipPink from "../assets/tooltip-pink.svg";
+import toolTipBlue from "../assets/tooltip-blue.svg";
 
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
@@ -28,8 +30,8 @@ const Info = () => {
       gridThickness: 0,
       lineThickness: 0,
       tickThickness: 0,
-      viewportMinimum:-0.05,
-      viewportMaximum:5.05,
+      viewportMinimum: -0.05,
+      viewportMaximum: 5.05,
     },
     toolTip: {
       shared: false,
@@ -38,12 +40,15 @@ const Info = () => {
       contentFormatter: function (e) {
         const entry = e.entries[0];
         const backgroundColor = entry.dataSeries.color;
+        const toolTipImage =
+          backgroundColor === "#FD71AF" ? toolTipPink : toolTipBlue;
         const textColor = "white";
-        return `<div style="position:absolute;top:-35px;left:100%;transform:translateX(-35%);background-color:${backgroundColor};color:${textColor};height:34px;border-radius:4px;display:flex;align-items:center;justify-content:center;width:70px;font-size:16px;padding:10px;box-shadow:0 2px 8px rgba(0,0,0,0.2);">
-    <strong>${entry.dataPoint.y}</strong>
-    <div style="position:absolute;bottom:-8px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:15px solid transparent;border-right:15px solid transparent;border-top:15px solid ${backgroundColor}"></div>
-</div>
-`;
+        return `<div style="position:absolute;top:-27px;left:100%;transform:translateX(-35%);height:34px;border-radius:4px;display:flex;align-items:center;justify-content:center;width:70px;font-size:16px;">
+        <img src="${toolTipImage}" alt="Tooltip Image" style="max-height:100%; max-width:100%; border-radius:4px;" />
+        <div style="position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;color:${textColor};font-size:12px;">
+        ${entry.dataPoint.y}
+        </div>
+    </div>`;
       },
     },
     data: [

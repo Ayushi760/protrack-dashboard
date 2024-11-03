@@ -12,7 +12,7 @@ export default {
         secondary:'#56555C'
       },
       boxShadow: {
-        custom: '0px 21.82px 21.82px 1px rgba(0, 0, 0, 0.05)', // Adjust the opacity as needed
+        custom: '0px 21.82px 21.82px 1px rgba(0, 0, 0, 0.05)',
       },
     },
   },
